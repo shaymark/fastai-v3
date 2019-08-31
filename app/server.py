@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://github.com/shaymark/dataML/raw/master/export.pkl'
-export_file_name = 'export.pkl'
+export_file_url = 'https://github.com/shaymark/dataML/raw/master/faces_database.pkl'
+export_file_name = 'faces_database.pkl'
 
-classes = ['happy', 'angry']
+classes = ['happy_child','angry_child','sad_child']
 path = Path(__file__).parent
 
 app = Starlette()
